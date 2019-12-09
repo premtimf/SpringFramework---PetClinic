@@ -1,4 +1,4 @@
-package service;
+package com.premt.springframeworkpetclinic.service;
 
 
 import com.premt.springframeworkpetclinic.model.Pet;
