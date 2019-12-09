@@ -5,9 +5,9 @@
     <title>Pet Clinic Home</title>
 </head>
 <body>
-<!--/*@thymesVar id="owner" type="com.premt.springframeworkpetclinic.model.Owner"*/-->
+<!--/*@thymesVar id="vet" type="com.premt.springframeworkpetclinic.model.Owner"*/-->
 
-    <h1 th:text="'List of owners'">List of Owners</h1>
+    <h1 th:text="'List of vets'">List of Owners</h1>
     <table>
         <thead>
             <tr>
@@ -18,10 +18,10 @@
         </thead>
         <tbody>
 
-            <tr th:each="owner : ${owners}">
-                <td th:text="${owner.id}">Id</td>
-                <td th:text="${owner.firstName}">First Name</td>
-                <td th:text="${owner.lastName}">Last name</td>
+            <tr th:each="vet : ${vets}">
+                <td th:text="${vet.id}">Id</td>
+                <td th:text="${vet.firstName}">First Name</td>
+                <td th:text="${vet.lastName}">Last name</td>
             </tr>
         </tbody>
     </table>
