@@ -38,7 +38,7 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
         map.entrySet().removeIf(entry -> entry.getValue().equals(object));
     }
 
-    public Long getNextId(){
+    private Long getNextId(){
         Long nextId = null;
         try {
             nextId = Collections.max(map.keySet()) + 1;
