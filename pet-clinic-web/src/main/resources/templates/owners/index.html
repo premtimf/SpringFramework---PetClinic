@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8"/>
-    <title>Pet Clinic Home</title>
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
 <body>
-<!--/*@thymesVar id="owner" type="com.premt.springframeworkpetclinic.model.Owner"*/-->
 
-    <h1 th:text="'List of owners here'">List of Owners is here </h1>
-    <table>
+    <h2>Owners</h2>
+    <table class="table table-striped">
         <thead>
             <tr>
-                <td>Id</td>
-                <td>First name</td>
-                <td>Last name</td>
+                <td style="width: 150px;">Id</td>
+                <td style="width: 150px;">First name</td>
+                <td style="width: 150px;">Last name</td>
             </tr>
         </thead>
         <tbody>
